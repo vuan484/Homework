@@ -65,4 +65,3 @@ int main()
 	input(a, row, col);
 	output(a, row, col);
 	cout << "sum=" << positivesum(a, row, col);
-}
