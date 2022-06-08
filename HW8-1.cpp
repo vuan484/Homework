@@ -36,9 +36,8 @@ int main()
     {
         bool result;
         string login;
-        cin >> first;
-        cout << "Enter second number" << endl;
-        cin >> second;
+        cout << "Enter login information" << endl;
+        cin >> login;
         result = first/ second;
         if (result == true)
         {
