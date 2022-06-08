@@ -5,7 +5,7 @@ using namespace std;
 bool request(string login)
 {
     string user_login = "Vu_An";
-    string user_password = "1506";
+    string user_password = "2212";
     string password;
     int counter = 1;
     cout << "Enter password" << endl;
@@ -35,10 +35,6 @@ int main()
     try
     {
         bool result;
-        string login;
-        cout << "Enter login information" << endl;
-        cin >> login;
-        result = first/ second;
         if (result == true)
         {
             cout << "Congratulations, you've entered" << endl;
