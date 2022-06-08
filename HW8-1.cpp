@@ -36,9 +36,10 @@ int main()
     {
         bool result;
         string login;
-        cout << "Enter login information" << endl;
-        cin >> login;
-        result = request(login);
+        cin >> first;
+        cout << "Enter second number" << endl;
+        cin >> second;
+        result = first/ second;
         if (result == true)
         {
             cout << "Congratulations, you've entered" << endl;
