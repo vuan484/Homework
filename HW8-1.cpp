@@ -1,49 +1,67 @@
-#include<iostream> 
-#include<string> 
+#include<string>
 using namespace std;
+
+struct User
+{
+string login;
+string password;
+
+User()
+{
+login = "DUC_ANH";
+password = "1234";
+}
+};
 
 bool request(string login)
 {
-    string user_login = "Vu_An";
-    string user_password = "2212";
-    string password;
-    int counter = 1;
-    cout << "Enter password" << endl;
-    cin >> password;
-    while (true)
-    {
-        if (login == user_login && password == user_password)
-        {
-            return true;
-        }
-        else
-        {
-            cout << "Wrong, let's try again" << endl;
-            cout << endl;
-            cout << "Enter password" << endl;
-            cin >> password;
-            counter++;
-        }
-        if (counter == 3)
-        {
-            throw password;
-        }
-    }
+User us;
+string password;
+int counter = 0;
+cout << "Введите пароль" << endl;
+cin >> password;
+
+while (true)
+{
+if (login == us.login && password == us.password)
+{
+return true;
 }
+if ((login != us.login || password != us.password) && counter == 3)
+{
+throw password;
+}
+else {
+cout << "Не верно , давайте попробуем снова" << endl;
+cout << endl;
+cout << "Введите пароль" << endl;
+cin >> password;
+counter++;
+}
+}
+
+}
+
 int main()
 {
-    try
-    {
-        bool result;
-        if (result == true)
-        {
-            cout << "Congratulations, you've entered" << endl;
-        }
-    }
-    catch (const string str)
-    {
-        cout << "Wrong attempts no more, goodbye" << endl;
-        return false;
-    }
-    return 0;
+try
+{
+bool result;
+setlocale(LC_ALL, "ru");
+string login;
+cout << "Введите логин" << endl;
+cin >> login;
+result = request(login);
+if (result == true)
+{
+cout << "Поздравляю вы вошли" << endl;
+}
+}
+catch (const string str)
+{
+cout << "Не верно попыток больше нет, до свидания :)" << endl;
+return false;
+}
+
+return 0;
 }
