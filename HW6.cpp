@@ -11,24 +11,14 @@ int main()
 {
     int a = 4, b = 11;
     cout << "sum =" << sum(a,b);
-    return 0; 
-}
-
-
-int main()
-{
     int a,b;
     char s;
     cin >> a >> s >> b;
     if(s == '+');
     cout << a + b;
-    return 0;
-}
 
  //вводятся кол-во элементов массива, первый массив, знак операции(+/-) и второй массив. Нужно вывести результат операции. Операцию производить поэлементно
 
-int main()
-{
     int size;
     cin >> size;
     int array_1[size];
@@ -44,8 +34,6 @@ int main()
     SubArray(array_1, array_2, array_3, size);
     PrintArray(array_3, size);
 
-int main()
-{
     char s;
     int n;
     cin >> n;
@@ -58,4 +46,4 @@ int main()
     }
     cout << (a,b,s,n);
     return 0;
-}
+}}
