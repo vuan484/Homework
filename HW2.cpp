@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+int main()
+{}
 void inchtocen(float &x) {
 	cout << "Length from inches to centimeters: " << x * 2.54;
 }
@@ -13,12 +14,15 @@ void retangulararea(float &a, float &b) {
 void reverse(int& n) {
 	int temp;
 	int res = 0;
+	int main ()
+	{
 	while (n > 0){
 		temp = n % 10;
 		res += res * 10 + temp;
 		n /= 10;
 	}
 	cout << "Reverse = " << res;
+	}
 }
 
 void positivenumber() {
