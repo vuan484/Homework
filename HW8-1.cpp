@@ -8,8 +8,8 @@ string password;
 
 User()
 {
-login = "DUC_ANH";
-password = "1234";
+login = "vuan";
+password = "2212";
 }
 };
 
